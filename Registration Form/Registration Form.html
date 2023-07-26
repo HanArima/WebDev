@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleform.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="" method="post">
+        <fieldset>
+            <label for="first-name">Enter your First Name: <input id="first-name" type="text" required /></label>
+            <label for="last-name">Enter your Last Name: <input id="last-name" type="text" required /></label>
+            <label for="email">Enter your Email: <input id="email" type="email" required /></label>
+            <label for="password">Create a New Password: <input id="password" type="password" pattern="[a-z0-5]{8,}"
+                    required /></label>
+        </fieldset>
+        <fieldset>
+            <label for="account-name"><input id="account-name" type="radio" name="account-name"
+                    class="inline" />Personal Account</label>
+            <label for="account-name"><input id="account-name" type="radio" name="account-name"
+                    class="inline" />Business Account</label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" class="inline"
+                    required />I have accepted the <a href="https://www.linkedin.com/in/garima-hansa-8606ba225/"> terms
+                    & conditions.</a></label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
+                    name="pfp" /></label>
+            <label for="age">Input your age (years): <input id="age" name="age" type="number" min="13"
+                    max="100" /></label>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">FreeCodeCamp News</option>
+                    <option value="2">FreeCodeCamp Youtube Channel</option>
+                    <option value="3">FreeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a Bio:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+        </fieldset>
+        <!-- The 'select' element is a container for a group of option elements, and the 'option' element acts as a label for each dropdown option. Both elements require closing tags. -->
+        <input type="submit" value="SUBMIT" />
+    </form> <!-- Action attribute tells to send the data of the form to this webpage-->
+    <!-- The method attribute specifies how to send form-data to the URL specified in the action attribute. Two possible values:- GET and POST
+    GET(sent as URL variables): https://www.w3schools.com/action_page.php?fname=Garima+&lname=Hansa
+    POST(sent as HTTP post transaction): https://www.w3schools.com/action_page.php -->
+
+    <!--
+        Value attribute actually is there to give value to the item. It is so that it would be easy to understand. Value attributes are tagged along with those elements that are to be recorded somewhere, or sent to some webpage.
+        As such, each option needs to be given a value attribute. Without which, the text content of the option will be submitted to the server.
+    -->
+    <!--
+        textarea element comes with the added benefit of being able to receive multi-line text, and an initial number of text rows and columns. requires a closing tag.
+    -->
+</body>
+
+</html>
