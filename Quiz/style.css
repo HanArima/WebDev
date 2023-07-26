@@ -1,0 +1,215 @@
+/*
+@media
+(HERE MEDIA REFERS TO THE device TYPE)
+    1.It's a rule
+    2.A part of MEDIA QUERY
+    3.It checks the conditions first and then applies the rule.
+    4.Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.
+    5. Syntax
+        @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+            CSS-Code;
+        }
+    6. Meanings
+        meaning of the not, only and and keywords:
+            not: The not keyword inverts the meaning of an entire media query.
+
+            only: The only keyword prevents older browsers that do not support media queries with media features from applying the specified styles. It has no effect on modern browsers.
+
+            and: The and keyword combines a media feature with a media type or other media features.
+
+            They are all optional. However, if you use not or only, you must also specify a media type.
+    7. For different medias
+        You can also have different stylesheets for different media, like this:
+
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+
+        Color-Pallete{
+    #c6c5c4
+    #858384
+    #5a5558
+    #232324
+    #080708
+}
+    */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #a1a1a0;
+    font-family: Helvetica;
+    margin: 0;
+    color: #080708;
+}
+
+#logo {
+    width: 250px;
+    height: 81px;
+    padding-right: 2em;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    background-color: #c6c5c4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+input,
+select,
+textarea {
+    background-color: #c6c5c4;
+    border: 1px solid #818181;
+    margin: 0 5px;
+    padding: 3px;
+}
+
+nav>ul>li {
+    color: #080708;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+
+}
+
+li>a {
+    color: #080708;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(67, 148, 121);
+}
+
+li:hover {
+    color: #c6c5c4;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #969594;
+    color: #080708;
+    padding: 1em;
+    ;
+}
+
+/*
+Typeface are all fonts that are easier to read and can be supported by low-resolution files.
+
+The words “typeface” and “font” are typically thought of as synonymous, but they actually refer to different things. While a typeface describes a particular style of lettering, a font refers to variations of a typeface, like its size and weight.
+*/
+h1,
+h2 {
+    font-family: Verdana, sans-serif;
+
+}
+
+h2 {
+    border-bottom: 4px solid #818181;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.info {
+    padding: 5px;
+    justify-content: left;
+}
+
+.info:last-child,
+.question-block:last-child {
+    margin-bottom: 3em;
+}
+
+.question {
+    padding: 0;
+}
+
+.question-block fieldset {
+    border: none;
+}
+
+.answers-list {
+    padding: 0;
+}
+
+p::before {
+    content: "Question #";
+}
+
+.formrow {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.answer {
+    margin-bottom: 1em;
+}
+
+button {
+    display: block;
+    margin: 3em auto;
+    padding: 0.5em;
+    width: 370px;
+    background-color: #c6c5c4;
+    border: 1px solid #818181;
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+
+/*
+CONTRAST IS IMPORTANT
+ the contrast between the text and the background of a heading should be at least 4.5:1
+*/
+footer {
+    background-color: #c6c5c4;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: #080708;
+
+}
+
+address a {
+    color: #080708;
+}
+
+address a:hover {
+    color: rgb(67, 148, 121);
+}
+
+address a:visited {
+    color: purple;
+}
