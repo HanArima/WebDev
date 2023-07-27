@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+
+<body>
+    <h1 id="title">何 ~ 何 Survey Form</h1>
+    <p id="description">Help us improve. <br> How did you like our services provided in 何 ~ 何 </p>
+    <form id="survey-form">
+        <fieldset>
+            <h3>Personal Information</h3>
+            <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your Name"
+                    required /></label>
+            <label id="number-label" for="number">Phone Number: <input id="number" type="number" min="1111111111"
+                    max="9999999999" maxlength="10" placeholder="Enter your Phone Number" required /></label>
+            <label id="email-label" for="email">Email Address: <input id="email" type="email" required
+                    placeholder="Enter a valid Email" /></label>
+            <label>Age: <input type="number" max="100" min="7" placeholder="Enter your Age" required /></label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <h3>Customer Opinion</h3>
+            <label class="ques" for="dropdown">How did you find us?<br>
+                <select id="dropdown">
+                    <option value="">Choose your option</option>
+                    <option value="1">Friends and Family</option>
+                    <option value="2">Newspaper</option>
+                    <option value="3">Television Advertisement</option>
+                    <option value="4">Internet</option>
+                    <option value="5">Other</option>
+                </select><br><br>
+                <label class="ques">What services did you avail provided by us? <br><br>
+                    <label class="services" for="s1"><input value="1" id="s1" type="checkbox" class="inline" />Service 1
+                    </label><br>
+                    <label class="services" for="s2"><input value="2" id="s2" type="checkbox" class="inline" />Service 2
+                    </label><br>
+                    <label class="services" for="s3"><input value="3" id="s3" type="checkbox" class="inline" />Service 3
+                    </label><br>
+                    <label class="services" for="s4"><input value="4" id="s4" type="checkbox" class="inline" />Service 4
+                    </label><br>
+                    <label class="services" for="s5"><input value="5" id="s5" type="checkbox" class="inline" />Service 5
+                    </label><br>
+                    <label class="services" for="s6"><input value="6" id="s6" type="checkbox" class="inline" />Service 6
+                    </label><br>
+                    <label class="services" for="s7"><input value="7" id="s7" type="checkbox" class="inline" />Service 7
+                    </label><br>
+                </label>
+                <br>
+            </label class="ques">
+            <label>How satisfied are you with our services?<br><br>
+                <label><input value="1" type="radio" name="customer-satisfaction" class="inline" />Totally Unsatisfied
+                </label><br>
+                <label><input value="2" type="radio" name="customer-satisfaction" class="inline" />Partially Unsatisfied
+                </label><br>
+                <label><input value="3" type="radio" name="customer-satisfaction" class="inline" /> Neutral </label><br>
+                <label><input value="4" type="radio" name="customer-satisfaction" class="inline" /> Partially Satisfied
+                </label><br>
+                <label><input value="5" type="radio" name="customer-satisfaction" class="inline" /> Totally Satisfied
+                </label><br>
+            </label>
+            <br>
+            <label class="ques">Your suggestions are valuable to us:
+                <textarea placeholder="Type your suggestions here..." rows="5" cols="50"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="SUBMIT" />
+    </form>
+</body>
+
+</html>
