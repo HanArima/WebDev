@@ -15,4 +15,5 @@ Overall, I had a lot of fun while making it. And BTW I got 9000 power points fro
 
 
 ### Project 3: Quiz
-
+I tried a new footer style. I learned how to make colorful hovers, how I can't crop footer video background using just html and css, how PHP is bit pain in the head since all the files must be hosted in "htdocs". My SQLserver were also not connecting at first. It worked only after I tinkered with my config.inc file. In the end I dropped the backend plan. 
+I will make this responsive once I learn a bit more about it.
